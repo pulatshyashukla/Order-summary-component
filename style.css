@@ -1,0 +1,146 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: block;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display";
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.card {
+  margin: 60px auto;
+  width: 80%;
+  max-width: 420px;
+  margin: 25px auto;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.section {
+  display: block;
+}
+img {
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+h2 {
+  margin: 1rem;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.para {
+  color: hsl(224, 23%, 55%);
+  padding: 0 1.6rem;
+  text-align: center;
+  line-height: 1.3rem;
+}
+.box {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  width: 85%;
+  margin: 1.3rem auto;
+  display: flex;
+  justify-content: space-around;
+  padding: auto;
+}
+.icon-music {
+  width: 20%;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.9rem;
+}
+.plan {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+.price {
+  color: hsl(224, 23%, 55%);
+}
+.payment-button {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 85%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+}
+.payment-button:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+.cancel-button {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  padding: 1rem;
+  background-color: transparent;
+  text-decoration: none;
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
+.cancel-button:hover {
+  color: hsl(245, 75%, 52%);
+}
+.change {
+  color: hsl(245, 75%, 52%);
+}
+
+.change:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+@media only screen and (min-width: 350px) {
+  .details {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  body {
+    font-size: 0.9rem;
+  }
+  .details {
+    margin-right: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  body {
+    font-size: 1rem;
+    /* margin-left: 12rem; */
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
